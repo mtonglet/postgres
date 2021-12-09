@@ -353,4 +353,6 @@ compute_range_stats(VacAttrStats *stats, AnalyzeAttrFetchFunc fetchfunc,
 	 * We don't need to bother cleaning up any of our temporary palloc's. The
 	 * hashtable should also go away, as it used a child memory context.
 	 */
+	printf("%d", stats->minrows);
+	fflush(stdout);
 }
